@@ -16,19 +16,19 @@ class App extends Component {
           <Hero resumeObj={resume} />
           
           <Route
-            exact path={'/react-resume/'}
+            exact path={'/resume/'}
             render={({ match }) => <Card resumeObj={resume} />}
           />
           <Route
-            exact path={'/react-resume/💻'}
+            exact path={'/resume/💻'}
             render={({ match }) => <SkillsList resumeObj={resume} />}
           />
           <Route
-            exact path={'/react-resume/🎒'}
+            exact path={'/resume/🎒'}
             render={({ match }) => <Education education={resume.education[0]} />}
           />
           <Route
-            exact path={'/react-resume/📧'}
+            exact path={'/resume/📧'}
             render={({ match }) => <Contact info={resume.basics} />}
           />
 
